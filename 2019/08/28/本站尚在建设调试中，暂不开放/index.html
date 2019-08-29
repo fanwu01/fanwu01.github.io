@@ -377,7 +377,7 @@
 							<p class="relate-post-content">
 								首先欢迎某位朋友能看到这里吧，这里就是起始。
 ”也没有什么好说的，就是被某种东西追逐着，不可名状，也许是焦虑，也许是其他。“
-我怀着如此心情，忙碌了一整天，其实大半时间都是在原地打滚，徒然的在网络海洋四处乱闯。但不管怎么说，这个网站，...
+我怀着如此心情，为创造这个博客忙碌了一整天，其实大半时间都是在原地打滚，徒然的在网络海洋四处乱闯。但不管怎么...
 							</p>
 						</div>
 
@@ -401,9 +401,30 @@
 
 		
 
-			<!-- I don't know !!!-->
-			<div>Please check the comment setting in config.yml of hexo-theme-Annie!</div>
-			
+			<!-- valine comment -->
+			<!-- show valine comment -->
+<div id="valineComment" class="comment"></div>
+
+<!-- valine`s js & css -->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/plugin/comment/valine.min.js"></script>
+<link rel="stylesheet" href="/css/comment.css">
+<script>
+	if( $('#valineComment').length ) {
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			//使用id寻找div元素（使用class可能找不到?）
+			el: '#valineComment',
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+			app_id: "DU--", //获取APP ID
+			app_key: "DU--", //获取APP KEY
+			placeholder: "no any!", //评论框占位提示文字        			
+		});
+	}
+</script>		
+
 		
 		
 	

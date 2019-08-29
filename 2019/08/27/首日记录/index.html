@@ -310,8 +310,9 @@
 	<div class="article-content" id="article-content">
 		<p>首先欢迎某位朋友能看到这里吧，这里就是起始。</p>
 <p><em>”也没有什么好说的，就是被某种东西追逐着，不可名状，也许是焦虑，也许是其他。“</em></p>
-<p>我怀着如此心情，忙碌了一整天，其实大半时间都是在原地打滚，徒然的在网络海洋四处乱闯。但不管怎么说，这个网站，我的第一个正式的博客网站搭建好了。</p>
-<p>我受到某种来自内心的呼唤疾驰，尽快，尽快，似乎在下一秒自己就成为了失败者，大概因为这个社会一向是争分夺秒才能得到更多的资源。我想要有人能看见，不求理解，只要是个观测者在网络对岸不经意间看了过来，那我杂乱不堪的【复活节岛石像】们就有了存在的意义。</p>
+<p>我怀着如此心情，为创造这个博客忙碌了一整天，其实大半时间都是在原地打滚，徒然的在网络海洋四处乱闯。但不管怎么说，这个网站，我的第一个正式的博客网站搭建好了。</p>
+<p>这些日子，我受到了某种来自内心的呼唤，尽快些，尽快些，似乎在下一秒自己就成为了失败者，大概因为这个社会一向是争分夺秒才能得到更多的资源。</p>
+<p>我希望有人能看见，不求理解，只要是个观测者在网络对岸不经意间看了过来，那我杂乱不堪的【复活节岛石像】们就有了存在的意义。</p>
 	
 	</div>
 	
@@ -409,9 +410,30 @@
 
 		
 
-			<!-- I don't know !!!-->
-			<div>Please check the comment setting in config.yml of hexo-theme-Annie!</div>
-			
+			<!-- valine comment -->
+			<!-- show valine comment -->
+<div id="valineComment" class="comment"></div>
+
+<!-- valine`s js & css -->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/plugin/comment/valine.min.js"></script>
+<link rel="stylesheet" href="/css/comment.css">
+<script>
+	if( $('#valineComment').length ) {
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			//使用id寻找div元素（使用class可能找不到?）
+			el: '#valineComment',
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+			app_id: "DU--", //获取APP ID
+			app_key: "DU--", //获取APP KEY
+			placeholder: "no any!", //评论框占位提示文字        			
+		});
+	}
+</script>		
+
 		
 		
 	
